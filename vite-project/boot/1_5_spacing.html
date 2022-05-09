@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap | Spacing</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border border-3 border-primary"
+    >
+      <div class="container-fluid">
+        <img
+          src="../radixLogo.jfif"
+          alt="image"
+          width="150"
+          height="120"
+          class="ms-5"
+        />
+        <button
+          class="navbar-toggler bg-muted"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto" id="header">
+            <li class="nav-item me-5">
+              <a class="nav-link fs-4 text-dark" href="../html/index.html"
+                >HTML</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-4 text-dark" href="../index.html">CSS</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-4 text-dark" href="#">Bootstrap</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-4 text-dark" href="#">Tailwind</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-4 text-dark" href="../javascript/index.html"
+                >Javascript</a
+              >
+            </li>
+            <li class="nav-item me-5 fs-4 text-dark">
+              <a class="nav-link fs-4 text-dark" href="../jquery/index.html"
+                >Jquery</a
+              >
+            </li>
+
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-12 p-0">
+            <aside class="bg-primary h-100">
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 1
+              </button>
+              <div class="collapse" id="module1">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice1"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./1_1_Display.html"> Typography</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./1_2_Text_Alignment.html" 
+                              >Text Alignment</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./1_3_Float_position.html" 
+                              >Float Position</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./1_4_color_bg.html" 
+                              >Background Color</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./1_5_spacing.html" 
+                              >Spacing</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./1_6_Sizing_Border.html" 
+                              >Sizing</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Projects
+              </button>
+              <div class="collapse" id="module2">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Assignment
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="pro/Blogen/index.html" target="_blank"
+                              >Blogen</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="pro/Mizuxe/index.html" target="_blank"
+                              >Mizuxe</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="pro/looplab/index.html" target="_blank"
+                              >Looplab</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="pro/Glozzom/index.html" target="_blank"
+                              >Glozzom</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="pro/DMart-India/index.html" target="_blank"
+                              >D-Mart India</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- MAIN -->
+          <div class="col-md-10" id="main">
+            <div class="container">
+              <div class="row">
+                <div class="col m-5 pl-5">
+                  <div class="conrainer">
+                    <div class="bg-success h1 p-2 mt-5">Margin-top</div>
+                    <div class="bg-success h1 p-2 ms-5">Margin-left</div>
+                    <div class="bg-success h1 p-2 me-5">Margin-right</div>
+                    <div class="bg-success h1 p-2 mb-5">Margin-bottom</div>
+
+                    <div class="bg-success h1 pt-4 w-25">Padding-top w 25%</div>
+                    <div class="bg-success h1 pb-4 w-25">
+                      Padding-bottom w 25%
+                    </div>
+                    <div class="bg-success h1 ps-4 w-25">
+                      Padding-left w 25%
+                    </div>
+                    <div class="bg-success h1 pe-4 w-25">
+                      Padding-right w 25%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Nav -->
+  </body>
+</html>

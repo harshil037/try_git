@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./dist/output.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- NAV START -->
+      <div>
+        <nav class="bg-purple-600 hover:bg-blue-900">
+          <div class="flex flex-row justify-around p-5">
+            <div>
+              <img src="./dist/img/logoP.png" alt="logo image" />
+            </div>
+            <div>
+              <ul class="w-full flex">
+                <li
+                  class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                >
+                  <a> HOME </a>
+                  <span class="fa fa-chevron-down ml-2" aria-hidden="true">
+                  </span>
+                  <div
+                    class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                  >
+                    <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >HOME1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >HOME2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >HOME3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >HOME4</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                >
+                  <a>ABOUT</a>
+                  <span
+                    class="fa fa-chevron-down ml-2"
+                    aria-hidden="true"
+                  ></span>
+                  <div
+                    class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                  >
+                    <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >ABOUT US</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >ABOUT ME</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                >
+                  <a href="#">SERVICES </a>
+                </li>
+                <li
+                  class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                >
+                  <a>PORTFOLIO</a>
+                  <span class="fa fa-chevron-down ml-2" aria-hidden="true">
+                  </span>
+                  <div
+                    class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                  >
+                    <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >PORTFOLIO - 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >PORTFOLIO - 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >PORTFOLIO DETAILS</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                >
+                  <a>NEWS </a>
+                  <span
+                    class="fa fa-chevron-down ml-2"
+                    aria-hidden="true"
+                  ></span>
+                  <div
+                    class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                  >
+                    <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >NEWS GRID</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >NEWS STANDARD</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                          >NEWS DETAILS</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                >
+                  <a href="#">
+                    <span>CONTACT </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- NAV END -->
+      <!-- BANNER -->
+      <div class="flex flex-row h-screen">
+        <div class="bg-purple-600 w-2/3 flex justify-center pl-5">
+          <div class="w-2/3 h-full grid grid-cols-1 place-content-center">
+            <h1 class="text-8xl font-semibold text-white mb-3">
+              Design Studio
+            </h1>
+            <p class="text-white text-lg mt-2 mb-5">
+              Dolor sit amet consectetur elit sed do eiusmod tempor incididunt
+              labore et dolore magna. aliqua enim ad minim veniam quis.
+            </p>
+            <span
+              class="bg-slate-900 text-white w-1/5 px-5 py-3 mt-5 rounded cursor-pointer text-center hover:bg-pink-400"
+              >Contact Us</span
+            >
+          </div>
+        </div>
+        <div class="bg-purple-600 w-1/3 relative z-1">
+          <img
+            src="./dist/img/bannerP.png"
+            alt="banner image"
+            class="absolute bottom-0 -left-56"
+          />
+        </div>
+      </div>
+
+      <!-- SECTION -->
+      <section class="p-5 bg-slate-900">
+        <div class="flex flex-row justify-between gap-14 w-5/6 mx-auto py-5">
+          <div class="py-5 mx-5">
+            <img
+              src="https://img.icons8.com/ios/50/fa314a/stationery.png"
+              alt="icon"
+              class="rotate-180"
+            />
+            <p class="text-white text-2xl font-semibold my-5">Brand Design</p>
+            <p class="text-slate-300">
+              Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor
+              incididunt labore et dolore magna.
+            </p>
+          </div>
+          <div class="py-5 mx-5">
+            <img
+              src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/fa314a/external-speaker-project-planing-flatart-icons-outline-flatarticons.png"
+              alt="icon"
+              class="w-12"
+            />
+            <p class="text-white text-2xl font-semibold my-5">
+              Seo & Marketing
+            </p>
+            <p class="text-slate-300">
+              Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor
+              incididunt labore et dolore magna.
+            </p>
+          </div>
+          <div class="py-5 mx-5">
+            <img
+              src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/66/fa314a/external-pizza-ramadan-and-eid-smashingstocks-glyph-smashing-stocks-2.png"
+              alt="icon"
+              class="w-12"
+            />
+            <p class="text-white text-2xl font-semibold my-5">
+              Creative Design
+            </p>
+            <p class="text-slate-300">
+              Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor
+              incididunt labore et dolore magna.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT US -->
+      <section id="cussion" class="mb-5">
+        <div class="my-5 py-5">
+          <div class="grid grid-cols-2 w-10/12 mx-auto py-5 my-5">
+            <div class="ml-5 relative">
+              <div
+                class="w-32 h-32 border-2 border-slate-300 rounded-full p-5 grid justify-center content-center absolute left-96 bottom-2 z-50 mb-5 ml-5"
+              >
+                <div
+                  class="w-24 h-24 bg-purple-600 rounded-full grid justify-center content-center"
+                >
+                  <span
+                    class="fa fa-caret-right place-content-center text-white text-3xl hover:text-orange-400 cursor-pointer"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+              <img src="./dist/img/cussionP.jpg" alt="image" class="rounded" />
+            </div>
+            <div class="flex flex-col justify-evenly ml-5 pb-5">
+              <p class="text-pink-500 font-semibold text-lg">ABOUT US</p>
+              <p class="text-5xl font-medium">
+                We are Design & Development Team.
+              </p>
+              <p class="text-slate-600">
+                Dolor sit amet consectetur elit sed do eiusmod tempor incididunt
+                labore et dolore magna aliqua enim minim veniam quis nostrud
+                exercitation ullamco laboris nisi ut aliquip commodo
+                consequat.duis aute irure.
+              </p>
+              <p class="text-slate-600">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                unde omnis iste natus error sit voluptatem.
+              </p>
+              <span
+                class="text-white py-3 px-5 cursor-pointer bg-red-400 w-1/3 rounded text-center"
+                >Purchase Now</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OUR PROJECT SECTION -->
+      <section class="mt-24 mb-5">
+        <div class="w-4/5 mx-auto my-5">
+          <h3 class="my-5 text-center text-pink-700 font-semibold text-2xl">
+            OUR PROJECTS
+          </h3>
+          <p class="my-4 pb-5 text-center font-semibold text-4xl">
+            Take a Look Around Our Portfolio
+          </p>
+          <div class="grid grid-cols-3 gap-6">
+            <div class="">
+              <div class="relative group">
+                <img src="./dist/img/item-1.jpg" alt="image" class="mb-5" />
+                <div
+                  class="absolute hidden text-white hover:bg-pink-700 delay-100 w-full h-full top-0 group-hover:block hover:duration-300"
+                >
+                  <h1 class="grid justify-center content-center mt-32">
+                    Painting
+                  </h1>
+                  <h5 class="grid justify-center content-center">Design</h5>
+                </div>
+              </div>
+              <div class="relative group">
+                <img src="./dist/img/item-4.jpg" alt="image" class="mb-5" />
+                <div
+                  class="absolute hidden text-white hover:bg-pink-700 delay-100 w-full h-full top-0 group-hover:block hover:duration-300"
+                >
+                  <h1 class="grid justify-center content-center mt-32">
+                    Painting
+                  </h1>
+                  <h5 class="grid justify-center content-center">Design</h5>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="relative group">
+                <img src="./dist/img/item-6.jpg" alt="image" class="mb-5" />
+                <div
+                  class="absolute hidden text-white hover:bg-pink-700 delay-100 w-full h-full top-0 group-hover:block hover:duration-300"
+                >
+                  <h1 class="grid justify-center content-center mt-32">
+                    Painting
+                  </h1>
+                  <h5 class="grid justify-center content-center">Design</h5>
+                </div>
+              </div>
+              <div class="relative group">
+                <img src="./dist/img/item-2.jpg" alt="image" class="mb-5" />
+                <div
+                  class="absolute hidden text-white hover:bg-pink-700 delay-100 w-full h-full top-0 group-hover:block hover:duration-300"
+                >
+                  <h1 class="grid justify-center content-center mt-32">
+                    Painting
+                  </h1>
+                  <h5 class="grid justify-center content-center">Design</h5>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="relative group">
+                <img src="./dist/img/item-3.jpg" alt="image" class="mb-5" />
+                <div
+                  class="absolute hidden text-white hover:bg-pink-700 delay-100 w-full h-full top-0 group-hover:block hover:duration-300"
+                >
+                  <h1 class="grid justify-center content-center mt-32">
+                    Painting
+                  </h1>
+                  <h5 class="grid justify-center content-center">Design</h5>
+                </div>
+              </div>
+              <div class="relative group">
+                <img src="./dist/img/item-5.jpg" alt="image" class="mb-5" />
+                <div
+                  class="absolute hidden text-white hover:bg-pink-700 delay-100 w-full h-full top-0 group-hover:block hover:duration-300"
+                >
+                  <h1 class="grid justify-center content-center mt-32">
+                    Painting
+                  </h1>
+                  <h5 class="grid justify-center content-center">Design</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="bg-slate-900 my-5 py5 w-full">
+        <div
+          class="text-white flex flex-row justify-between mx-auto w-3/4 px-5 py-5"
+        >
+          <div class="grid grid-cols-2 w-48 text-2xl p-5">
+            <div class="w-10">
+              <img
+                src="https://img.icons8.com/ios/100/fa314a/bag-front-view.png"
+                class="h-16 pt-2"
+                alt="image"
+              />
+            </div>
+            <div class="w-64">
+              <h1 class="font-extrabold text-4xl">370</h1>
+              <p class="font-bold text-sm">Wok Completed</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 w-40 text-6xl p-5">
+            <div class="w-10">
+              <img
+                src="https://img.icons8.com/ios/100/fa314a/fill-color.png"
+                class="w-16 h-16 pt-3"
+                alt="image"
+              />
+            </div>
+            <div class="w-64">
+              <h1 class="font-extrabold text-4xl">450</h1>
+              <p class="font-bold text-sm">New Projects</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 w-40 text-6xl p-5">
+            <div class="w-10">
+              <img
+                src="https://img.icons8.com/ios/50/fa314a/like--v1.png"
+                class="w-16 h-16 pt-3"
+                alt="image"
+              />
+            </div>
+            <div class="w-64">
+              <h1 class="font-extrabold text-4xl">50k+</h1>
+              <p class="font-bold text-sm">Happy Customers</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 w-40 text-6xl p-5">
+            <div class="w-10">
+              <img
+                src="https://img.icons8.com/external-outline-agus-raharjo/64/fa314a/external-trophy-social-media-outline-agus-raharjo.png"
+                class="w-16 h-16 pt-3"
+                alt="image"
+              />
+            </div>
+            <div class="w-64">
+              <h1 class="font-extrabold text-4xl">50+</h1>
+              <p class="font-bold text-sm">Award Wins</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROGRESS  -->
+      <section>
+        <div class="grid grid-cols-2 my-5 py-5 w-4/5 mx-auto">
+          <div class="flex flex-col justify-between py-5 mt-5">
+            <h5 class="text-2xl text-red-400 mt-5 pt-5 font-semibold">
+              OUR SKILL
+            </h5>
+            <h2 class="text-5xl font-semibold my-5 py-5">
+              We are Design & Development Team.
+            </h2>
+            <div class="my-5">
+              <div class="mb-2 text-base font-medium">BRANDING</div>
+              <div class="w-4/5 bg-gray-200 rounded-full h-2.5">
+                <div
+                  class="bg-purple-600 h-2.5 rounded-full"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+            <div class="my-5">
+              <div class="mb-2 text-base font-medium">CONSULTING</div>
+              <div class="w-4/5 bg-gray-200 rounded-full h-2.5">
+                <div
+                  class="bg-purple-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div class="my-5">
+              <div class="mb-2 text-base font-medium">BUSINESS</div>
+              <div class="w-4/5 bg-gray-200 rounded-full h-2.5">
+                <div
+                  class="bg-purple-600 h-2.5 rounded-full"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+            <div class="my-5">
+              <div class="mb-2 text-base font-medium">PROMOTION</div>
+              <div class="w-4/5 bg-gray-200 rounded-full h-2.5">
+                <div
+                  class="bg-purple-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="my-5 py-5">
+            <div>
+              <div class="relative pl-28">
+                <img
+                  src="./dist/img/pattern-skill.jpg"
+                  alt="back image"
+                  srcset=""
+                />
+                <img
+                  src="./dist/img/skill.jpg"
+                  alt="front imaage"
+                  srcset=""
+                  class="absolute top-0 mt-8 pt-48 -left-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--   -->
+      <section class="mt-20 py-5">
+        <div class="my-5 pt-5 w-4/6 mx-auto">
+          <h5 class="text-red-400 text-center my-5 font-semibold text-2xl">
+            TESTIMONIAL
+          </h5>
+          <h1 class="text-center text-5xl my-5 font-semibold">
+            Our Clients Say
+          </h1>
+          <div class="flex overflow-x-scroll pb-10 pt-5 hide-scroll-bar">
+            <div class="flex flex-nowrap">
+              <div
+                class="inline-block relative px-3 cursor-pointer text-center w-80 mx-auto border-2 py-5 shadow-2xl mr-5 border-b-4 border-b-red-500"
+              >
+                <div class="relative">
+                  <img
+                    src="./dist/img/test-1.jpg"
+                    alt="client"
+                    class="w-auto mx-auto rounded-full"
+                  />
+                  <div
+                    class="w-10 rounded-full py-2 bg-red-400 absolute bottom-0 right-1/3"
+                  >
+                    <em class="fa-solid fa-quote-right text-white"></em>
+                  </div>
+                </div>
+                <p class="text-slate-500 my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iure nostrum blanditiis dolorum, voluptate
+                </p>
+                <h2 class="text-2xl pt-5">Liam Hughes</h2>
+                <p class="text-red-400">Manager</p>
+              </div>
+              <div
+                class="inline-block relative px-3 cursor-pointer text-center w-80 mx-auto border-2 py-5 shadow-2xl mr-5 border-b-4 border-b-red-500"
+              >
+                <div class="relative">
+                  <img
+                    src="./dist/img/test-2.jpg"
+                    alt="client"
+                    class="w-auto mx-auto rounded-full"
+                  />
+                  <div
+                    class="w-10 rounded-full py-2 bg-red-400 absolute bottom-0 right-1/3"
+                  >
+                    <em class="fa-solid fa-quote-right text-white"></em>
+                  </div>
+                </div>
+                <p class="text-slate-500 my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iure nostrum blanditiis dolorum, voluptate
+                </p>
+                <h2 class="text-2xl pt-5">Liam Hughes</h2>
+                <p class="text-red-400">Manager</p>
+              </div>
+              <div
+                class="inline-block relative px-3 cursor-pointer text-center w-80 mx-auto border-2 py-5 shadow-2xl mr-5 border-b-4 border-b-red-500"
+              >
+                <div class="relative">
+                  <img
+                    src="./dist/img/test-3.jpg"
+                    alt="client"
+                    class="w-auto mx-auto rounded-full"
+                  />
+                  <div
+                    class="w-10 rounded-full py-2 bg-red-400 absolute bottom-0 right-1/3"
+                  >
+                    <em class="fa-solid fa-quote-right text-white"></em>
+                  </div>
+                </div>
+                <p class="text-slate-500 my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iure nostrum blanditiis dolorum, voluptate
+                </p>
+                <h2 class="text-2xl pt-5">Liam Hughes</h2>
+                <p class="text-red-400">Manager</p>
+              </div>
+              <div
+                class="inline-block relative px-3 cursor-pointer text-center w-80 mx-auto border-2 py-5 shadow-2xl mr-5 border-b-4 border-b-red-500"
+              >
+                <div class="relative">
+                  <img
+                    src="./dist/img/test-1.jpg"
+                    alt="client"
+                    class="w-auto mx-auto rounded-full"
+                  />
+                  <div
+                    class="w-10 rounded-full py-2 bg-red-400 absolute bottom-0 right-1/3"
+                  >
+                    <em class="fa-solid fa-quote-right text-white"></em>
+                  </div>
+                </div>
+                <p class="text-slate-500 my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iure nostrum blanditiis dolorum, voluptate
+                </p>
+                <h2 class="text-2xl pt-5">Liam Hughes</h2>
+                <p class="text-red-400">Manager</p>
+              </div>
+              <div
+                class="inline-block relative px-3 cursor-pointer text-center w-80 mx-auto border-2 py-5 shadow-2xl mr-5 border-b-4 border-b-red-500"
+              >
+                <div class="relative">
+                  <img
+                    src="./dist/img/test-2.jpg"
+                    alt="client"
+                    class="w-auto mx-auto rounded-full"
+                  />
+                  <div
+                    class="w-10 rounded-full py-2 bg-red-400 absolute bottom-0 right-1/3"
+                  >
+                    <em class="fa-solid fa-quote-right text-white"></em>
+                  </div>
+                </div>
+                <p class="text-slate-500 my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iure nostrum blanditiis dolorum, voluptate
+                </p>
+                <h2 class="text-2xl pt-5">Liam Hughes</h2>
+                <p class="text-red-400">Manager</p>
+              </div>
+              <div
+                class="inline-block relative px-3 cursor-pointer text-center w-80 mx-auto border-2 py-5 shadow-2xl mr-5 border-b-4 border-b-red-500"
+              >
+                <div class="relative">
+                  <img
+                    src="./dist/img/test-3.jpg"
+                    alt="client"
+                    class="w-auto mx-auto rounded-full"
+                  />
+                  <div
+                    class="w-10 rounded-full py-2 bg-red-400 absolute bottom-0 right-1/3"
+                  >
+                    <em class="fa-solid fa-quote-right text-white"></em>
+                  </div>
+                </div>
+                <p class="text-slate-500 my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iure nostrum blanditiis dolorum, voluptate
+                </p>
+                <h2 class="text-2xl pt-5">Liam Hughes</h2>
+                <p class="text-red-400">Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="w-full bg-slate-900 my-20">
+        <div class="flex w-2/3 mx-auto p-5">
+          <img src="./dist/img/client-1.png" alt="logo" class="mr-16 my-5" />
+          <img src="./dist/img/client-2.png" alt="logo" class="mr-16 my-5" />
+          <img src="./dist/img/client-3.png" alt="logo" class="mr-16 my-5" />
+          <img src="./dist/img/client-4.png" alt="logo" class="mr-16 my-5" />
+          <img src="./dist/img/client-5.png" alt="logo" class="mr-16 my-5" />
+        </div>
+        <div class="flex flex-row overflow-hidden">
+          <div class="relative group">
+            <img src="./dist/img/team-1.jpg " alt="image" />
+            <div
+              class="absolute hidden w-48 h-24 pt-5 pl-5 text-white bg-red-400 top-1/2 group-hover:block tracking-wider transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+            >
+              <h1 class="text-2xl text-semibold">Lima Huges</h1>
+              <p class="text-slate-500">Manager</p>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="./dist/img/team-2.jpg " alt="image" />
+            <div
+              class="absolute hidden w-48 h-24 pt-5 pl-5 text-white bg-red-400 top-1/2 group-hover:block"
+            >
+              <h1 class="text-2xl text-semibold">Lima Huges</h1>
+              <p class="text-slate-500">Manager</p>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="./dist/img/team-3.jpg " alt="image" />
+            <div
+              class="absolute hidden w-48 h-24 pt-5 pl-5 text-white bg-red-400 top-1/2 group-hover:block"
+            >
+              <h1 class="text-2xl text-semibold">Lima Huges</h1>
+              <p class="text-slate-500">Manager</p>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="./dist/img/team-4.jpg " alt="image" />
+            <div
+              class="absolute hidden w-48 h-24 pt-5 pl-5 text-white bg-red-400 top-1/2 group-hover:block"
+            >
+              <h1 class="text-2xl text-semibold">Lima Huges</h1>
+              <p class="text-slate-500">Manager</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section>
+        <div class="w-2/3 mx-auto">
+          <h2 class="text-red-400 text-center mt-16 font-semibold text-xl">
+            LATEST ARTICLE
+          </h2>
+          <p class="text-center text-4xl my-3 font-semibold">
+            Stay Update With Dizer
+          </p>
+          <div class="grid grid-cols-3 gap-10">
+            <div>
+              <img src="./dist/img/blog-1.jpg" alt="image" />
+              <span
+                class="bg-white p-2 -top-48 left-4 relative ml-2 mt-2 hover:text-pink-400"
+                >Aritcle</span
+              >
+              <p class="text-2xl my-3 font-bold">
+                Elit duied aiusm tempor did labore dolory
+              </p>
+              <p class="text-red-400">BY ADMIN / ON 2 SEP, 2018</p>
+              <p class="text-slate-500 my-5">
+                Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui
+                officia deserunt.mollit anim id est laborum. sed ut pers.
+              </p>
+            </div>
+            <div>
+              <img src="./dist/img/blog-2.jpg" alt="image" />
+              <span
+                class="bg-white p-2 -top-48 left-4 relative ml-2 mt-2 hover:text-pink-400"
+                >Aritcle</span
+              >
+              <p class="text-2xl my-3 font-bold">
+                Elit duied aiusm tempor did labore dolory
+              </p>
+              <p class="text-red-400">BY ADMIN / ON 2 SEP, 2018</p>
+              <p class="text-slate-500 my-5">
+                Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui
+                officia deserunt.mollit anim id est laborum. sed ut pers.
+              </p>
+            </div>
+            <div>
+              <img src="./dist/img/blog-3.jpg" alt="image" />
+              <span
+                class="bg-white p-2 -top-48 left-4 relative ml-2 mt-2 hover:text-pink-400"
+                >Aritcle</span
+              >
+              <p class="text-2xl my-3 font-bold">
+                Elit duied aiusm tempor did labore dolory
+              </p>
+              <p class="text-red-400">BY ADMIN / ON 2 SEP, 2018</p>
+              <p class="text-slate-500 my-5">
+                Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui
+                officia deserunt.mollit anim id est laborum. sed ut pers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="bg-purple-600 mt-20">
+        <div class="flex justify-center py-5">
+          <div class="w-2/3 my-5 py-5">
+            <p class="text-white text-5xl font-semibold">
+              Dizer Give The Smart Solution For Your Business
+            </p>
+          </div>
+          <div class="text-center mt-10 -ml-16 py-5 justify-start">
+            <p class="text-white bg-red-400 px-6 py-3">Get A Quote</p>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="bg-slate-800 mb-4 text-white">
+        <div class="px-4">
+          <div class="grid grid-cols-4 gap-8 w-3/4 mx-auto">
+            <div class="pt-32">
+              <h4 class="text-2xl font-semibold pb-4">About dizer.</h4>
+              <p class="text-slate-400 px-2">
+                Lorem ipsum dolor amet consectetur adipielit sed eiusm tempor
+                incididunt ut labore dolore magna aliqua enim ad minim veniam.
+              </p>
+              <div class="text-4xl justify-center my-4">
+                <span class="mx-2"
+                  ><em class="fa-brands fa-facebook"> </em
+                ></span>
+                <span class="mx-2"
+                  ><em class="fa-brands fa-twitter"> </em
+                ></span>
+                <span class="mx-2"
+                  ><em class="fa-brands fa-instagram"> </em
+                ></span>
+                <span class="mx-2"
+                  ><em class="fa-brands fa-linkedin"> </em
+                ></span>
+              </div>
+            </div>
+            <div class="pt-32">
+              <h4 class="text-2xl font-semibold pb-4">Navigation</h4>
+              <ul class="text-slate-400 px-2 leading-9">
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Company News</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="pt-32">
+              <h4 class="text-2xl font-semibold pb-4">Services</h4>
+              <ul class="text-slate-400 px-2 leading-9">
+                <li>Brand Design</li>
+                <li>Seo & Marketing</li>
+                <li>Creative Design</li>
+                <li>Photography</li>
+                <li>Print Design</li>
+              </ul>
+            </div>
+            <div class="pt-32">
+              <h4 class="text-2xl font-semibold pb-4">Contact Info</h4>
+              <div class="w-34 leading-9">
+                <p class="text-slate-400 px-2">
+                  9567 Turner Trace Apt. 466 North Willie, BC C3G8A4
+                </p>
+                <p class="text-slate-400 px-2">
+                  +21 123 456 5523 Hello@Dizer.Com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 py-5">
+            <hr class="w-3/4 mx-auto" />
+            <div class="grid grid-cols-3 w-3/4 text-center mx-auto py-5">
+              <p class="text-slate-400 px-2 mt-5">
+                dizer. © 2018 All Right Reserved
+              </p>
+              <h4 class="text-5xl">dizer.</h4>
+              <p class="text-slate-400 px-2 mt-5">
+                Terms of Service | Privacy Policy
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

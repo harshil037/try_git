@@ -1,0 +1,22 @@
+.navbar-togglerr {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 8px;
+  position: relative;
+  margin-left: -120px;
+}
+.navbarr {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbarr ul {
+  color: #fff;
+}
+.navbarr li {
+  color: #fff;
+}
+.navbarr a {
+  color: #fff;
+}
+.navbarr p {
+  color: #fff;
+}

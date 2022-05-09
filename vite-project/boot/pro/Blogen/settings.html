@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms">
+            <li class="nav-item px-2">
+              <a href="index.html" class="nav-link">Dashbord</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown mr-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><em class="fa fa-user"></em> Welcome Bean
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item"
+                  ><em class="fa fa-user-circle"></em> Profile</a
+                >
+                <a href="settings.html" class="dropdown-item"
+                  ><em class="fa fa-gear"></em> Settings</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link"
+                ><em class="fa fa-user-times"></em> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="main-header" class="py-2 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><em class="fa fa-gear"></em> Settings</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ACTIONS -->
+    <section id="action" class="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mr-auto">
+            <a href="index.html" class="btn btn-light btn-block"
+              ><em class="fa fa-arrow-left"></em> Back To Dashboard</a
+            >
+          </div>
+          <div class="col-md-3 ms-auto">
+            <a href="#" class="btn btn-success btn-block"
+              ><em class="fa fa-check"></em> Save Chages</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="settings">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h4>Edit Settings</h4>
+              </div>
+              <div class="card-body">
+                <form>
+                  <fieldset class="form-group">
+                    <legend>Allow User Registrations</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          value="yes"
+                          checked
+                        />Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          value="no"
+                        />No
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <legend>Homepage Format</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          value="posts"
+                          checked
+                        />Post Index
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          value="page"
+                        />Single Page
+                      </label>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">Copyright &copy; 2022 Blogen</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace("editor1");
+    </script>
+  </body>
+</html>

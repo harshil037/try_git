@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      #header .nav-link {
+        font-size: 1.5rem;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border border-3 border-primary"
+    >
+      <div class="container-fluid">
+        <img
+          src="../../../radixLogo.jfif"
+          alt="image"
+          width="150"
+          height="120"
+          class="ms-5"
+        />
+        <button
+          class="navbar-toggler bg-muted"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto" id="header">
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../html/index.html">HTML</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="../../../index.html">CSS</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../boot/index.html">Bootstrap</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/Tailwind/index.html">Tailwind</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="#">Javascript</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../jquery/index.html">Jquery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-12 p-0">
+            <aside class="bg-primary h-100">
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 1
+              </button>
+              <div class="collapse" id="module1">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice1"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-1/practice/alert.html">Alert</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-1/practice/greatSum.html"
+                              >Great & sum</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment1"
+                    >
+                      Assignment
+                    </li>
+                    <div class="collapse" id="assignment1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group text">
+                          <li class="list-group-item p-2">
+                            <a href="module-1/assignment/index.html"
+                              >Math operations</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 2
+              </button>
+              <div class="collapse" id="module2">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-2/practice/strBlank.html"
+                              >String blank</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-2/practice/strSplit.html"
+                              >String split</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-2/practice/strExtract.html"
+                              >String extract</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-2/practice/currentDate.html"
+                              >Current Date</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-2/practice/arrOperations.html"
+                              >Array operations</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-2/assignment/date.html"
+                              >Date validation</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module3"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 3
+              </button>
+              <div class="collapse" id="module3">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-3/practice/jsBOM.html"
+                              >Browser Object Models</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-3/assignment/form.html"
+                              >Form Validation
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module4"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 4
+              </button>
+              <div class="collapse" id="module4">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-4/practice/square.html"
+                              >Callback function</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-4/practice/var-let.html"
+                              >var & let</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-4/practice/promise.html"
+                              >Promise</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-4/assignment/examTime.html"
+                              >exam time validation</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module5"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 5
+              </button>
+              <div class="collapse" id="module5">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a
+                              href="./module-5/practice/functionExpression.html"
+                              >Function Expression</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a
+                              href="./module-5/practice/functionConstructor.html"
+                              >Function Constructor</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-5/practice/functionHoisting.html"
+                              >Function Hoisting</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-5/practice/functionObject.html"
+                              >Function Call</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-5/practice/functionClosure.html"
+                              >Function Closure</a
+                            >
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./module-5/practice/functionApply.html"
+                              >Function Apply</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module6"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 6
+              </button>
+              <div class="collapse" id="module6">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-6/practice/jsonData.html"
+                              >Json localstorage</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./module-6/assignment/cart.html"
+                              >Json table & cart</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- MAIN -->
+          <div class="col-md-10" id="main">
+            <div class="container">
+              <div class="row">
+                <div class="col m-5 pl-5">
+                  <!--  -->
+                  <h5 class="text-muted mb-4">
+                    Using Function Apply pass employee object to a function
+                    defined in the function.
+                  </h5>
+                  <h3 id="area"></h3>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- NAV -->
+
+    <script type="text/javascript">
+      const employee = {
+        resume: function () {
+          return (
+            this.name + "</br> " + this.address + "</br > " + this.designation
+          );
+        },
+      };
+      const employee1 = {
+        name: "Elon",
+        address: "14N 350W Mars",
+        designation: "Homosepians",
+      };
+      document.getElementById("area").innerHTML =
+        employee.resume.apply(employee1);
+    </script>
+  </body>
+</html>

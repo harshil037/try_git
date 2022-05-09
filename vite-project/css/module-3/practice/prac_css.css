@@ -1,0 +1,97 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  top: 0;
+  left: 0;
+}
+.four {
+  float: left;
+  border: 2px solid black;
+  width: 500px;
+  height: 30vh;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.f1,
+.f2,
+.f3,
+.f4 {
+  font-size: 40px;
+  border: 2px solid aqua;
+  width: 40px;
+  height: 8vh;
+  background-color: rgb(105, 105, 221);
+}
+.f2 {
+  width: 80px;
+  text-align: end;
+}
+.f3 {
+  align-self: flex-end;
+  height: 20vh;
+}
+.three {
+  float: right;
+  border: 2px solid black;
+  width: 500px;
+  height: 30vh;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.f11,
+.f22,
+.f33 {
+  font-size: 40px;
+  border: 2px solid aqua;
+  width: 40px;
+  height: 8vh;
+  background-color: rgb(105, 105, 221);
+}
+/* Photo Gallery */
+hr {
+  clear: both;
+  border: 1px solid black;
+}
+.main {
+  background-color: rgb(199, 199, 199);
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border: 2px solid black;
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

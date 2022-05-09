@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Report Card</title>
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      #header .nav-link {
+        font-size: 1.5rem;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border border-3 border-primary"
+    >
+      <div class="container-fluid">
+        <img
+          src="../../../radixLogo.jfif"
+          alt="image"
+          width="150"
+          height="120"
+          class="ms-5"
+        />
+        <button
+          class="navbar-toggler bg-muted"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto" id="header">
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="#">HTML</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../index.html">CSS</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../boot/index.html">Bootstrap</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/Tailwind/index.html">Tailwind</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../javascript/index.html"
+                >Javascript</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../jquery/index.html">Jquery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-12 p-0">
+            <aside class="bg-primary h-100">
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 1
+              </button>
+              <div class="collapse" id="module1">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice1"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./reportCard.html">Student Report Card</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./hierarchy.html">Company HR</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./loginForm.html">Login Form</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./newsArticle.html">Article tag - News</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./horizontalMenu.html">Horizontal Menu</a>
+                          </li>
+                          <li class="list-group-item p-2">
+                            <a href="./navAnchor.html">Nav & Anchor tag</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment1"
+                    >
+                      Assignment
+                    </li>
+                    <div class="collapse" id="assignment1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group text">
+                          <li class="list-group-item p-2">
+                            <a href="../assignment/empForm.html"
+                              >Employee Form</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 2
+              </button>
+              <div class="collapse" id="module2">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="../../module 2/practice/media.html"
+                              >Media Tags</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="../../module 2/assignment/index.html"
+                              >Personalize Resume(HTML)</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- MAIN -->
+          <div class="col-md-10" id="main">
+            <div class="container">
+              <div class="row">
+                <div class="col m-5 pl-5">
+                  <table
+                    border="1"
+                    style="width: 40%; line-height: 35px; text-align: center"
+                  >
+                    <caption>
+                      Student report card of training Javascript.
+                    </caption>
+                    <tr>
+                      <th colspan="5" id="thead">
+                        <h1>Report Card</h1>
+                      </th>
+                    </tr>
+
+                    <tr>
+                      <td colspan="5" style="text-align: left">
+                        Student Name : Pappu Panchar
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" style="text-align: left">
+                        Roll No. : 69
+                      </td>
+                      <td colspan="3" style="text-align: left">
+                        Passing Year : 2009
+                      </td>
+                    </tr>
+                    <tr>
+                      <th id="thead">Subject Name</th>
+                      <th id="thead">GP</th>
+                      <th id="thead">Grade</th>
+                      <th id="thead">Status</th>
+                    </tr>
+                    <tr>
+                      <td>React</td>
+                      <td>9</td>
+                      <td>AB</td>
+                      <td>CL</td>
+                    </tr>
+                    <tr>
+                      <td>Node</td>
+                      <td>8</td>
+                      <td>BA</td>
+                      <td>CL</td>
+                    </tr>
+                    <tr>
+                      <td>Javascript</td>
+                      <td>10</td>
+                      <td>AA</td>
+                      <td>CL</td>
+                    </tr>
+                    <tr>
+                      <td>Angular</td>
+                      <td>9</td>
+                      <td>AB</td>
+                      <td>CL</td>
+                    </tr>
+                    <tr>
+                      <td>Vue</td>
+                      <td>8</td>
+                      <td>BA</td>
+                      <td>CL</td>
+                    </tr>
+                    <tr>
+                      <td>Express</td>
+                      <td>10</td>
+                      <td>AA</td>
+                      <td>CL</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- /nav -->
+  </body>
+</html>

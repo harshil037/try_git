@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./dist/output.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- NAV START -->
+    <div>
+      <nav class="pb-2 border-b-4">
+        <div class="flex flex-row justify-around">
+          <div class="ml-32 mt-4">
+            <img src="./img/logo.png" alt="img" height="50" />
+          </div>
+          <div class="flex mr-44">
+            <ul class="w-full h-full flex text-slate-900 font-bold pt-5">
+              <li class="mx-5 h-full transform hover:scale-125 tracking-wide">
+                <a href="index.html"> ABOUT US</a>
+              </li>
+              <li class="mx-5">
+                <a href="categories.html">CATEGORIES</a>
+              </li>
+              <li class="mx-5">
+                <a href="social.html">SOCIAL OUTREACH</a>
+              </li>
+              <li class="mx-5">
+                <a href="partner.html">PARTNER WITH US</a>
+              </li>
+              <li class="mx-5">
+                <a href="careers.html">CAREERS</a>
+              </li>
+              <li class="mx-5">
+                <a href="feedback.html">FEEDBACK</a>
+              </li>
+            </ul>
+            <div class="flex mt-4">
+              <em
+                class="fa-brands fa-facebook text-blue-700 text-4xl pl-10"
+              ></em>
+              <em
+                class="fa-brands fa-linkedin text-blue-700 text-4xl pl-5"
+              ></em>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- MAIN -->
+    <div class="text-white">
+      <div class="overflow-x-hidden bg-green-500">
+        <p class="align-middle hScrollP">
+          Dear Customers - Our offers / promotions and customer care contact
+          details are published on our websites
+          <a
+            class="font-semibold text-slate-700 underline"
+            href="https://www.dmartindia.com/"
+            >(www.dmartindia.com</a
+          >
+          and
+          <a
+            class="font-semibold text-blue-600 underline"
+            href="https://www.dmartindia.com/"
+          >
+            www.dmart.in)</a
+          >, DMart Ready App and at our Stores. Please do not call any unknown
+          numbers or click on any unknown links or similar looking links. Please
+          check the website name carefully. These could be potential phishing
+          websites.
+        </p>
+      </div>
+      <img src="./img/backimage.jpg" alt="img" class="w-full" />
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div id="quickLinks">
+      <div class="w-3/4 mx-auto py-5">
+        <div class="row">
+          <p class="text-center text-xl underline py-5">QUICK LINKS</p>
+        </div>
+        <div
+          class="grid grid-cols-3 border-b-2 gap-4 border-r-2 my-4 rounded-lg shadow-md"
+        >
+          <div class="justify-end">
+            <img src="./img/ql1.jpg" alt="img" class="w-full h-36" />
+          </div>
+          <div class="justify-start col-span-2">
+            <p class="my-4 font-bold">New Suppliers</p>
+            <p class="my-4">Would you like to showcase your products to us?</p>
+            <button
+              class="font-semibold p-1 text-white text-sm bg-green-700 rounded-full"
+            >
+              NEW VENDOR ONLINE APPOINTMENT
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-3 border-b-2 gap-4 border-l-2 my-4 rounded-lg shadow-md"
+        >
+          <div class="justify-start col-span-2 pl-4">
+            <p class="my-4 font-bold">Landlords</p>
+            <p class="my-4">Do you have a property to rent / sell?</p>
+            <button
+              class="font-semibold p-1 text-white text-sm bg-green-700 rounded-full"
+            >
+              REGISTER AS LANDLORDS
+            </button>
+          </div>
+          <div class="justify-end">
+            <img src="./img/ql2.jpg" alt="img" class="w-full h-36" />
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-3 border-b-2 gap-4 border-r-2 my-4 rounded-lg shadow-md"
+        >
+          <div class="justify-end">
+            <img src="./img/ql3.jpg" alt="img" class="w-full h-36" />
+          </div>
+          <div class="justify-start col-span-2">
+            <p class="my-4 font-bold">Job Aspirant</p>
+            <p class="my-4">Interested in joining us?</p>
+            <button
+              class="font-semibold p-1 text-white text-sm bg-green-700 rounded-full"
+            >
+              APPLY NOW
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-3 border-b-2 gap-4 border-l-2 my-4 rounded-lg shadow-md"
+        >
+          <div class="justify-start col-span-2 pl-4">
+            <p class="my-4 font-bold">Better Schools, Brighter Futures!</p>
+            <p class="my-4">Better Schools, Brighter Future!</p>
+            <button
+              class="font-semibold p-1 text-white text-sm bg-green-700 rounded-full"
+            >
+              READ MORE
+            </button>
+          </div>
+          <div class="justify-end">
+            <img src="./img/ql4.jpg" alt="img" class="w-full h-36" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW STORIES -->
+
+    <div id="newAtories">
+      <div class="w-3/4 mx-auto py-5">
+        <div class="row">
+          <div class="">
+            <p class="text-center text-xl underline py-5">NEW STORIES</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 h-80 gap-6">
+          <div class="border-2 rounded-lg hover:shadow-2xl overflow-hidden">
+            <h4 class="text-2xl pl-4 pt-4 font-semibold">Udupi</h4>
+            <p class="my-3 pl-4">Bengaluru, Karnataka</p>
+            <img src="./img/ns1.jpg" alt="img" class="mt-2 w-full" />
+          </div>
+          <div class="border-2 rounded-lg hover:shadow-2xl overflow-hidden">
+            <h4 class="text-2xl pl-4 pt-4 font-semibold">Pathardi Nashik</h4>
+            <p class="my-3 pl-4">Nashik, Maharashtra</p>
+            <img src="./img/ns2.jpg" alt="img" class="mt-2 h-fit w-full" />
+          </div>
+          <div class="border-2 rounded-lg hover:shadow-2xl overflow-hidden">
+            <h4 class="text-2xl pl-4 pt-4 font-semibold">Nandurbar</h4>
+            <p class="my-3 pl-4">Nandurbar, Maharashtra</p>
+            <img src="./img/ns3.jpg" alt="img" class="mt-2 w-full h-full" />
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6 h-80 mt-5">
+          <div class="border-2 rounded-lg hover:shadow-2xl overflow-hidden">
+            <h4 class="text-2xl pl-4 pt-4 font-semibold">
+              Magadi Road-Sunkadakatte
+            </h4>
+            <p class="my-3 pl-4">Bengaluru, Karnataka</p>
+            <img src="./img/ns4.jpg" alt="img" class="mt-2 w-full" />
+          </div>
+          <div class="border-2 rounded-lg hover:shadow-2xl overflow-hidden">
+            <h4 class="text-2xl pl-4 pt-4 font-semibold">
+              Jhotwara- Kalwar Rd
+            </h4>
+            <p class="my-3 pl-4">Jaipur, Rajasthan</p>
+            <img src="./img/ns5.jpg" alt="img" class="mt-2 h-full w-full" />
+          </div>
+          <div class="border-2 rounded-lg hover:shadow-2xl overflow-hidden">
+            <h4 class="text-2xl pl-4 pt-4 font-semibold">Sira Tumkur</h4>
+            <p class="my-3 pl-4">Nandurbar, Maharashtra</p>
+            <img src="./img/ns6.jpg" alt="img" class="mt-2 w-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORE CATEGORIES -->
+
+    <div id="storeCategories">
+      <div class="w-3/4 mx-auto py-5">
+        <div>
+          <p class="text-center text-xl underline py-5">STORE CATEGORIES</p>
+        </div>
+        <div class="grid grid-cols-4 gap-4 my-8">
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc1.jpg" alt="img" class="w-full" />
+            <div class="-mt-12 font-bold">
+              <p class="bg-slate-500 z-50">GROCERY & STAPLES</p>
+            </div>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc2.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DAILY ESSENTIALS</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc3.jpg" alt="img" class="w-full h-full" />
+            <p class="-mt-12 font-bold">DAIRY & FROZEN</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc4.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DMART BRANDS</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 my-8">
+          <div class="text-center hover:opacity-50">
+            <img
+              src="./img/sc5.jpg"
+              alt="img"
+              class="w-full h-full bg-slate-500"
+            />
+
+            <p class="-mt-12 font-bold">GROCERY & STAPLES</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc6.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DAILY ESSENTIALS</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc7.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DAIRY & FROZEN</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc8.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DMART BRANDS</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 my-8">
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc9.jpg" alt="img" class="w-full" />
+
+            <p class="-mt-12 font-bold">GROCERY & STAPLES</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc10.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DAILY ESSENTIALS</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc11.jpg" alt="img" class="w-full h-full" />
+            <p class="-mt-12 font-bold">DAIRY & FROZEN</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc12.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DMART BRANDS</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 my-8">
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc13.jpg" alt="img" class="w-full" />
+
+            <p class="-mt-12 font-bold">GROCERY & STAPLES</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc14.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DAILY ESSENTIALS</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc15.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DAIRY & FROZEN</p>
+          </div>
+          <div class="text-center hover:opacity-50">
+            <img src="./img/sc16.jpg" alt="img" class="w-full" />
+            <p class="-mt-12 font-bold">DMART BRANDS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div>
+      <div
+        id="footer"
+        class="bg-local"
+        style="background-image: url(./img/mapImg.jpg)"
+      >
+        <div class="bg-slate-900 bg-opacity-50">
+          <div>
+            <p class="text-center underline text-xl text-white pt-3">
+              CONTACT US
+            </p>
+          </div>
+          <br />
+          <div class="grid grid-cols-3 text-white mx-auto text-center pb-14">
+            <div class="w-full">
+              <br />
+              <em class="fa fa-home faIcon text-2xl ml-32"></em>
+              <br />
+              <p class="pt-3 text-left ml-32 mx-auto">
+                Anjaneya Cooperative Housing Society Ltd, Opposite Hiranandani
+                Foundation School, Orchard Avenue, Powai, Mumbai, Maharashtra -
+                400076.
+              </p>
+            </div>
+            <div>
+              <br />
+              <em class="fa fa-phone faIcon text-2xl"></em>
+              <br />
+              <p class="pt-3 font-bold">+91 22 33400500</p>
+            </div>
+            <div>
+              <br />
+              <em class="fa fa-envelope faIcon text-2xl"></em>
+              <br />
+              <p class="pt-3 font-bold">suggestion@dmartindia.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="flex flex-row bg-gray-700 text-white">
+        <div class="grid grid-cols-1 mx-auto mb-6">
+          <ul class="w-full h-full flex pt-5">
+            <li class="mx-20">
+              <a href="#about" class="nav-link"> Sitemap</a>
+            </li>
+            <li class="mx-20">
+              <a href="#categories" class="nav-link">Privacy Policy</a>
+            </li>
+            <li class="mx-20">
+              <a href="#categories" class="nav-link">Terms and Conditions</a>
+            </li>
+            <li class="mx-20">
+              <a href="#careers" class="nav-link">Disclaimer</a>
+            </li>
+            <li class="mx-20">
+              <a href="#careers" class="nav-link">Investor Relations</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

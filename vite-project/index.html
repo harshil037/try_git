@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      #header .nav-link {
+        font-size: 1.5rem;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border border-3 border-primary"
+    >
+      <div class="container-fluid">
+        <img
+          src="./radixLogo.jfif"
+          alt="image"
+          width="150"
+          height="120"
+          class="ms-5"
+        />
+        <button
+          class="navbar-toggler bg-muted"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto" id="header">
+            <li class="nav-item me-5">
+              <a class="nav-link" href="./html/index.html">HTML</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="#">CSS</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="./boot/index.html">Bootstrap</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="./tailwind/index.html">Tailwind</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="./javascript/index.html">Javascript</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="./jquery/index.html">Jquery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-12 p-0">
+            <aside class="bg-primary h-100">
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 1
+              </button>
+              <div class="collapse" id="module1">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice1"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-1/practice/prac_css.html"
+                              >Font Practice</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment1"
+                    >
+                      Assignment
+                    </li>
+                    <div class="collapse" id="assignment1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group text">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-1/assignment/assi_css.html"
+                              >Resume</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 2
+              </button>
+              <div class="collapse" id="module2">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-2/practice/prac_css.html"
+                              >Positions</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-2/assignment/assi_css.html"
+                              >Simple Navbar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module3"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 3
+              </button>
+              <div class="collapse" id="module3">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-3/practice/prac_css.html"
+                              >Photo Galley</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-3/assignment/assi_css.html"
+                              >Responsive Navbar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module4"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 4
+              </button>
+              <div class="collapse" id="module4">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice2"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-4/practice/prac_css.html"
+                              >RS -Font & Background</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="./css/module-4/assignment/assi_css.html"
+                              >RS - Album</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- MAIN -->
+          <div class="col-md-10" id="main">
+            <div class="container">
+              <div class="row">
+                <div class="col m-5 pl-5">
+                  <img src="" alt="" class="mx-5 d-md-block d-none" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

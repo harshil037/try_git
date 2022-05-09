@@ -1,0 +1,15 @@
+.hScrollP {
+  width: max-content;
+  /* Starting position */
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  animation: scroll-left 40s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./dist/output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav class="bg-white border-2 border-blue-500">
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <img
+          src="../../radixLogo.jfif"
+          alt="image"
+          width="120"
+          height="120"
+          class="my-4 ml-20"
+        />
+        <button
+          data-collapse-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+        <div
+          class="hidden w-full md:block md:w-auto"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="flex flex-col mt-4 mr-14 md:flex-row md:space-x-8 md:mt-0 md:text-2xl"
+            id="header"
+          >
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../html/index.html">HTML</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="../../index.html">CSS</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../boot/index.html">Bootstrap</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Tailwind</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../javascript/index.html"
+                >Javascript</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../jquery/index.html">Jquery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container flex mx-auto">
+        <div class="grid grid-flow-row">
+          <div class="row-span-3 w-full top-0">
+            <div>
+              <nav class="bg-blue-600">
+                <div class="flex flex-col justify-around p-5">
+                  <div>
+                    <ul class="w-full flex flex-col text-white">
+                      Module 1
+                      <br />
+                      <li
+                        class="group relative dropdown px-4 py-2 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                      >
+                        <a> Practice </a>
+                        <span
+                          class="fa fa-chevron-down ml-2"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        <div
+                          class="hidden h-auto z-10 dropdowm-menu absolute group-hover:block"
+                        >
+                          <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                            <li>
+                              <a
+                                href="#"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Typography
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="./Border.html"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Border</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./sizing.html"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Sizing</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./spacing.html"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Spacing</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./HelloWorld.html"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Hello World</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <!--  -->
+                      <li
+                        class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                      >
+                        <a> Assignment </a>
+                        <span
+                          class="fa fa-chevron-down ml-2"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        <div
+                          class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                        >
+                          <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                            <li>
+                              <a
+                                href="../TL/tailwind/index.html"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Tailwind Practice
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <!-- Module 2 -->
+                      <br />
+                      Module 2
+
+                      <li
+                        class="group relative dropdown px-4 py-2 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                      >
+                        <a> Practice </a>
+                        <span
+                          class="fa fa-chevron-down ml-2"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        <div
+                          class="hidden h-auto dropdowm-menu absolute group-hover:block z-10"
+                        >
+                          <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                            <li>
+                              <a
+                                href="./gridPractice.html"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Grid practice
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li
+                        class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                      >
+                        <a> Assignment </a>
+                        <span
+                          class="fa fa-chevron-down ml-2"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        <div
+                          class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                        >
+                          <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                            <li>
+                              <a
+                                href="../blog/index.html"
+                                target="_blank"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Blog website
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <!--  -->
+                      <!-- Project  -->
+                      <br />
+                      Projects
+
+                      <li
+                        class="group relative dropdown px-4 py-2 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                      >
+                        <a> Practice </a>
+                        <span
+                          class="fa fa-chevron-down ml-2"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        <div
+                          class="hidden h-auto dropdowm-menu absolute group-hover:block z-10"
+                        >
+                          <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                            <li>
+                              <a
+                                href="../foodNinja/index.html"
+                                target="_blank"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Food Ninja
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="../portfolio/index.html"
+                                target="_blank"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >Portfolio
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li
+                        class="group relative dropdown px-4 text-white hover:text-pink-500 cursor-pointer font-medium text-base uppercase tracking-wide"
+                      >
+                        <a> Assignment </a>
+                        <span
+                          class="fa fa-chevron-down ml-2"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        <div
+                          class="hidden h-auto dropdowm-menu absolute group-hover:block"
+                        >
+                          <ul class="top-0 w-48 bg-white shadow px-2 py-2 mt-3">
+                            <li>
+                              <a
+                                href="../DMart-India/index.html"
+                                target="_blank"
+                                class="block text-slate-500 text-base font-medium p-2 hover:bg-blue-800 hover:text-white"
+                                >DMart - India
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN -->
+        <div class="flex flex-auto container" id="main">
+          <div class="w-full m-10">
+            <!--  -->
+            <p class="font-mono text-3xl">font-mono</p>
+
+            <p class="font-sans text-3xl hover:font-serif">hover me</p>
+
+            <p class="text-sm mt-5">TEST-SM</p>
+            <p class="text-base">TEST-BASE</p>
+            <p class="text-lg">TEST-LG</p>
+            <p class="text-xl">TEST-XL</p>
+            <p class="text-2xl hover:subpixel-antialiased">TEST-2XL</p>
+
+            <p class="italic my-5 text-2xl">Italic</p>
+
+            <p class="font-light">font-light</p>
+            <p class="font-normal">font-normal</p>
+            <p class="font-medium">font-medium</p>
+            <p class="font-semibold">font-semibold</p>
+            <p class="font-bold">font-bold</p>
+
+            <p class="tracking-tighter mt-5 text-3xl">tracking-tighter</p>
+            <p class="tracking-wide mt-5 text-3xl">tracking-wide</p>
+            <p class="tracking-wider mt-5 text-3xl">tracking-wider</p>
+            <p class="tracking-widest mt-5 text-3xl">tracking-widest</p>
+
+            <ul class="list-disc m-5">
+              <li>LIST DISC</li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+            </ul>
+
+            <ol class="list-decimal m-5">
+              <li>LIST DECIMAL</li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+            </ol>
+
+            <ul class="list-none m-5">
+              <li>LIST NONE</li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+              <li>
+                Now this is a story all about how, my life got flipped turned
+                upside down
+              </li>
+            </ul>
+
+            <ul class="list-inside m-5">
+              <li>LIST INSIDE</li>
+              <li>5 cups chopped Porcini mushrooms</li>
+              <li>5 cups chopped Porcini mushrooms</li>
+              <li>5 cups chopped Porcini mushrooms</li>
+              <!-- ... -->
+            </ul>
+
+            <ul class="list-outside m-5">
+              <li>LIST OUTSIDE</li>
+              <li>5 cups chopped Porcini mushrooms</li>
+              <li>5 cups chopped Porcini mushrooms</li>
+              <li>5 cups chopped Porcini mushrooms</li>
+              <!-- ... -->
+            </ul>
+
+            <div class="bg-gray-600 p-3 m-2 border-2 w-1/2 mx-auto">
+              <p class="my-5 border-2 p-3 text-white text-left">
+                TEXT-LEFT So I started to walk into the water. I won't lie to
+                you boys, I was terrified. But I pressed on, and as I made my
+                way past the breakers a strange calm came over me. I don't know
+                if it was divine intervention or the kinship of all living
+                things but I tell you Jerry at that moment, I was a marine
+                biologist.
+              </p>
+              <p class="my-5 border-2 p-3 text-white text-center">
+                TEXT-CENTER So I started to walk into the water. I won't lie to
+                you boys, I was terrified. But I pressed on, and as I made my
+                way past the breakers a strange calm came over me. I don't know
+                if it was divine intervention or the kinship of all living
+                things but I tell you Jerry at that moment, I was a marine
+                biologist.
+              </p>
+              <p class="my-5 border-2 p-3 text-white text-justify">
+                TEXT-JUSTIFY So I started to walk into the water. I won't lie to
+                you boys, I was terrified. But I pressed on, and as I made my
+                way past the breakers a strange calm came over me. I don't know
+                if it was divine intervention or the kinship of all living
+                things but I tell you Jerry at that moment, I was a marine
+                biologist.
+              </p>
+              <p class="my-5 border-2 p-3 text-white text-right">
+                TEXT-RIGHT So I started to walk into the water. I won't lie to
+                you boys, I was terrified. But I pressed on, and as I made my
+                way past the breakers a strange calm came over me. I don't know
+                if it was divine intervention or the kinship of all living
+                things but I tell you Jerry at that moment, I was a marine
+                biologist.
+              </p>
+            </div>
+
+            <p class="text-3xl my-5 text-blue-600/100">text-blue-600/100</p>
+            <p class="text-3xl my-5 text-blue-600/75">text-blue-600/75</p>
+            <p class="text-3xl my-5 text-blue-600/50">text-blue-600/50</p>
+            <p class="text-3xl my-5 text-blue-600/25">text-blue-600/25</p>
+            <p class="text-3xl my-5 text-blue-600/0">text-blue-600/0</p>
+
+            <p class="text-3xl my-5 underline">underline</p>
+            <p class="text-3xl my-5 overline">overline</p>
+            <p class="text-3xl my-5 line-through">line-through`</p>
+            <p class="text-3xl my-5 no-underline">no-underline</p>
+
+            <div
+              class="border-2 mx-auto my-5 p-5 bg-slate-700 text-white w-1/2"
+            >
+              <p>
+                I’m Derek, an astro-engineer based in Tattooine. I like to build
+                X-Wings at
+                <a class="underline decoration-sky-500">decoration-sky-500</a>.
+                Outside of work, I like to
+                <a class="underline decoration-pink-500"
+                  >decoration-pink-500
+                </a>
+                and have
+                <a class="underline decoration-indigo-500"
+                  >decoration-indigo-500</a
+                >
+                fights.
+              </p>
+            </div>
+
+            <p class="underline decoration-solid text-3xl">
+              underline decoration-solid
+            </p>
+            <p class="underline decoration-double my-5 text-3xl">
+              underline decoration-double
+            </p>
+            <p class="underline decoration-dotted my-5 text-3xl">
+              underline decoration-dotted
+            </p>
+            <p class="underline decoration-dashed my-5 text-3xl">
+              underline decoration-dashed
+            </p>
+            <p class="underline decoration-wavy my-5 text-3xl">
+              underline decoration-wavy
+            </p>
+
+            <p class="underline decoration-1 text-2xl mt-5">
+              decoration-1 tichkness
+            </p>
+            <p class="underline decoration-2 text-2xl">
+              decoration-2 tichkness
+            </p>
+            <p class="underline decoration-4 text-2xl">
+              decoration-4 tichkness
+            </p>
+
+            <div class="p-2 m-5">
+              <p class="underline my-2 text-2xl underline-offset-1 ...">
+                UnderLine OffSet 1
+              </p>
+              <p class="underline my-2 text-2xl underline-offset-2 ...">
+                UnderLine OffSet 2
+              </p>
+              <p class="underline my-2 text-2xl underline-offset-4 ...">
+                UnderLine OffSet 4
+              </p>
+              <p class="underline my-2 text-2xl underline-offset-8 ...">
+                UnderLine OffSet 8
+              </p>
+            </div>
+
+            <div class="p-2 m-5 text-2xl">
+              <p class="normal-case">normal-case</p>
+              <p class="uppercase">uppercase</p>
+              <p class="lowercase">lowercase</p>
+              <p class="capitalize">capitalize</p>
+            </div>
+
+            <div class="p-2 m-5 text-2xl mx-auto text-white">
+              <p class="truncate bg-gray-600 my-2 w-96">
+                TRUNCATE
+                pneumonoultramicroscopicsilicovolcanocpneumonoultramicroscopicsilicovolcanoc
+              </p>
+              <p class="text-ellipsis overflow-hidden bg-gray-600 my-2 w-96">
+                TEXT-ELLIPSIS
+                pneumonoultramicroscopicsilicovolcanocpneumonoultramicroscopicsilicovolcanoc
+              </p>
+              <p class="text-clip overflow-hidden bg-gray-600 my-2 w-96">
+                TEXT-CLIP
+                pneumonoultramicroscopicsilicovolcanocpneumonoultramicroscopicsilicovolcanoc
+              </p>
+            </div>
+
+            <div class="m-5 border-2 border-gray-800">
+              <p
+                class="mx-5 p-2 border-2 border-blue-900 rounded inline-block align-baseline"
+              >
+                align-baseline
+              </p>
+              <p
+                class="mx-5 p-2 border-2 border-blue-900 rounded inline-block align-top"
+              >
+                align-top
+              </p>
+              <p
+                class="mx-5 p-2 border-2 border-blue-900 rounded inline-block align-bottom"
+              >
+                align-bottom
+              </p>
+              <p
+                class="mx-5 p-2 border-2 border-blue-900 rounded inline-block align-text-top"
+              >
+                align-text-top
+              </p>
+              <p
+                class="mx-5 p-2 border-2 border-blue-900 rounded inline-block align-text-bottom"
+              >
+                align-text-bottom
+              </p>
+              <p
+                class="mx-5 p-2 border-2 border-blue-900 rounded inline-block align-middle"
+              >
+                align-middle
+              </p>
+            </div>
+
+            <div class="m-5 p-5 bg-gray-700 text-white rounded">
+              <p>
+                Higher resolution means more than just a better-quality image.
+                With a Retina 6K display,
+                <a
+                  class="text-blue-600 after:content-['_↗'] ..."
+                  href="https://www.
+            apple.com/pro-display-xdr/"
+                  target="_blank"
+                  >Pro Display XDR</a
+                >
+                gives you nearly 40 percent more screen real estate than a 5K
+                display.
+              </p>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./dist/output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+  </head>
+  <body class="text-gray-600 font-sans">
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="/" class="hover:text-gray-400"> Food Ninja</a>
+            </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-gray-700 font-bold py-1 border-r-4 border-red-500">
+              <a
+                href="#"
+                class="px-4 flex justify-end tracking-wider transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+              >
+                <span>Home </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                <span>About </span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                <span>Contact </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--    End NAV -->
+      <main class="px-16 py-16 bg-gray-100 md:col-span-2">
+        <div class="flex justify-self-center md:justify-end">
+          <a
+            href="#"
+            class="text-red-500 md:border-2 border-red-500 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider hover:bg-red-500 hover:text-white transition ease-out duration-500"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="text-red-500 md:border-2 border-red-500 ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider hover:bg-red-500 hover:text-white transition ease-out duration-500"
+            >Sign up</a
+          >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Ninjas</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!-- Cards go here -->
+            <div
+              class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg"
+            >
+              <img
+                src="./dist/img/stew.jpg"
+                alt="image"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">5 Bean Chilli Stew</span>
+                <span class="block">Recipe by Mario</span>
+              </div>
+              <div
+                class="bg-slate-300 text-slate-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 inline-block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg"
+            >
+              <img
+                src="./dist/img/noodles.jpg"
+                alt="image"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Veg Noodles</span>
+                <span class="block">Recipe by Mario</span>
+              </div>
+              <div
+                class="bg-slate-300 text-slate-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 inline-block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg"
+            >
+              <img
+                src="./dist/img/curry.jpg"
+                alt="image"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Cheese Curry</span>
+                <span class="block">Recipe by Mario</span>
+              </div>
+              <div
+                class="bg-slate-300 text-slate-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 inline-block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+          <div class="mt-8">
+            <!-- Cards go here -->
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="bg-slate-300 text-blue-600 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+            >
+              Load more
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!--bg-secondary :  bg-slate-300 || text-secondary : text-blue-600
+
+  .card{
+    @apply bg-white rounded overflow-hidden shadow-md relative
+  }
+.badge{
+  @apply bg-slate-300 text-slate-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2
+}
+.btn{
+  @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider
+}
+-->

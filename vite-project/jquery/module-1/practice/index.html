@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      #header .nav-link {
+        font-size: 1.5rem;
+        color: #000;
+      }
+    </style>
+    <script src="../../jquer.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border border-3 border-primary"
+    >
+      <div class="container-fluid">
+        <img
+          src="../../../radixLogo.jfif"
+          alt="image"
+          width="150"
+          height="120"
+          class="ms-5"
+        />
+        <button
+          class="navbar-toggler bg-muted"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto" id="header">
+            <li class="nav-item me-5">
+              <a class="nav-link fs-5 fs-5" href="../../../html/index.html"
+                >HTML</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../index.html">CSS</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../boot/index.html">Bootstrap</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/Tailwind/index.html">Tailwind</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="../../../javascript/index.html"
+                >Javascript</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="#">Jquery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-12 p-0">
+            <aside class="bg-primary h-100">
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 1
+              </button>
+              <div class="collapse" id="module1">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#practice1"
+                    >
+                      Practice
+                    </li>
+                    <div class="collapse" id="practice1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="#">jQuery practice</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment1"
+                    >
+                      Assignment
+                    </li>
+                    <div class="collapse" id="assignment1">
+                      <div class="card card-body p-0">
+                        <ul class="list-group text">
+                          <li class="list-group-item p-2">
+                            <a href="../assignment/dropdown_jquery.html"
+                              >Dropdown jQuery</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-outline-primary text-white w-100 py-3 border-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#module2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Module 2
+              </button>
+              <div class="collapse" id="module2">
+                <div class="card card-body p-0">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item p-2 btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#assignment2"
+                    >
+                      Assigment
+                    </li>
+                    <div class="collapse" id="assignment2">
+                      <div class="card card-body p-0">
+                        <ul class="list-group">
+                          <li class="list-group-item p-2">
+                            <a href="../../module-2/assignment/getJson_api.html"
+                              >JSON api</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- MAIN -->
+          <div class="col-md-10" id="main">
+            <div class="container">
+              <div class="row">
+                <div class="col m-5 pl-5">
+                  <!--  -->
+                  <h1>prec - 1</h1>
+                  <br />
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, vero hic facere dolorum earum exercitationem. Totam
+                    dicta, est dolore impedit voluptate debitis alias beatae
+                    rerum non ipsa expedita adipisci veniam?
+                  </p>
+                  <h1>prec -2</h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, vero hic facere<span id="help">
+                      dolorum earum exercitationem </span
+                    >. Totam dicta, est dolore impedit voluptate debitis alias
+                    beatae rerum non ipsa expedita adipisci veniam?
+                  </p>
+                  <br />
+                  <h1>prec -3, 4</h1>
+                  <form>
+                    <label>Please select your technology</label>
+                    <br />
+                    <label for="php"
+                      ><input type="radio" value="PHP" name="tech" id="php" />
+                      PHP
+                    </label>
+                    <label for="ASP.NET"
+                      ><input
+                        type="radio"
+                        value="ASP.NET"
+                        name="tech"
+                        id="ASP.NET"
+                      />
+                      ASP.NET
+                    </label>
+                    <label for="ASP"
+                      ><input type="radio" value="ASP" name="tech" id="ASP" />
+                      ASP
+                    </label>
+                    <label for="JSP"
+                      ><input type="radio" value="JSP" name="tech" id="JSP" />
+                      JSP
+                    </label>
+                    <label for="PERL"
+                      ><input type="radio" value="PERL" name="tech" id="PERL" />
+                      PERL
+                    </label>
+                    <label for="COLD_FUSION"
+                      ><input
+                        type="radio"
+                        value="COLD FUSION"
+                        name="tech"
+                        id="COLD_FUSION"
+                      />
+                      COLD FUSION
+                    </label>
+                    <label for="OTHER"
+                      ><input
+                        type="radio"
+                        value="OTHER"
+                        name="tech"
+                        id="OTHER"
+                      />
+                      OTHER
+                    </label>
+                    <p class="my-10 text-2xl font-medium">
+                      You have selected : <span id="ans"> </span>
+                    </p>
+                  </form>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("p:first").click(function () {
+          $(this).css("background-color", "blue");
+        });
+        $("#help")
+          .mouseenter(function () {
+            $(this).fadeOut();
+          })
+          .mouseleave(function () {
+            $(this).fadeIn();
+          });
+
+        var $radio = $("input[name=tech]").change(function () {
+          var value = $radio.filter(":checked").val();
+          $("#ans").html(value);
+          $("#ans").css("background-color", "aqua");
+        });
+      });
+    </script>
+  </body>
+</html>

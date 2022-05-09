@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+}
+.p {
+  display: flex;
+}
+.c1,
+.c2,
+.c3 {
+  margin: 0 40px;
+  width: 400px;
+  height: 40vh;
+  border: 2px solid black;
+}
+.c1 h1 {
+  position: relative;
+  left: 50px;
+  border: 1px solid blue;
+  width: 350px;
+  height: 100px;
+}
+.c2 h1 {
+  position: static;
+  border: 1px solid blue;
+  width: 350px;
+  height: 100px;
+}
+.c3 {
+  overflow: scroll;
+}
